@@ -1,5 +1,5 @@
-require 'capybara/cucumber'
-#require 'capybara/dsl'
+#require 'capybara/cucumber'
+require 'capybara/dsl'
 require 'selenium-webdriver'
 require 'faker'
 require 'cpf_faker'
@@ -10,8 +10,7 @@ require 'yaml'
 require 'capybara/poltergeist'
 require 'cnpj_utils'
 
-# habilitar par manter sessão do usuário
-#include Capybara::DSL
+include Capybara::DSL
 
 # set de browser simples que funciona
 # Capybara.register_driver :selenium do |app|
