@@ -1,7 +1,7 @@
 # Quality Assurance Engineer - Tiago Oliveira Silva
   Testes funcionais sobre a plataforma RD Station. Os testes foram feitos com Cucumber e Capybara com o conceito de Page Objects.
 
-### O projeto está estruturado da seguinte forma: ###
+# O projeto está estruturado da seguinte forma:
 
 -  ProcessoRD
 -  cucumber
@@ -14,41 +14,47 @@
 -  config
 -  screenshots
 
-### Driver necessário: ###
-    - Por padrão os testes serão executados no Chrome
-    Instale o Nodejs (Next, Next e Finish) https://nodejs.org/en/ e depois o comando abaixo:
+# Driver necessário:
 
-      ```ruby
-      npm install -g chromedriver
-      ```
+- Por padrão os testes serão executados no Chrome.
+- Instale o Nodejs (Next, Next e Finish) https://nodejs.org/en/ e depois o comando abaixo:
 
-### Configurando o ambiente ###
+```ruby
+npm install -g chromedriver
+```
 
-    - Necessário ruby 2.3.3p222.
-    - Instalando o bundler. Navegue na pasta /ProcessoRD/ e execute o seguinte comando:
+# Configurando o ambiente:
 
-      ```ruby
-      gem install bundler
-      ```
-### Instalando as gems ###
-    Execute o seguinte comando dentro da raiz do projeto:
-      ```ruby
-      bundle install
-      ```
-    Execute o comando "bundle install" na pasta ProcessoRD.
+- Necessário ruby 2.3.3p222.
+- Instalando o bundler. Navegue na pasta /ProcessoRD/ e execute o seguinte comando:
 
-### Executando os testes ###
+```ruby
+gem install bundler
+```
 
-    Na pasta /ProcessoRD/cucumber, execute o comando abaixo para execução de todos os testes:
-      ```ruby
-      cucumber
-      ```
-    Para exeutar uma feature específica, execute o comando na pasta cucumber:
-      ```ruby
-      cucumber -t @nome_da_feature
-      ```
-      obs.: a tag da feature "@nome_da_feature" vem no inicio de cada arquivo.
+# Instalando as gems:
+- Execute o seguinte comando dentro da raiz do projeto:
 
-### Relatório dos testes em HTML ###
-    Após a execução dos testes estará disponível um relatório na pasta /ProcessoRD/cucumber/features_report.html
-    obs.: Os screenshots estarão disponíveis no pé de cada funcionalidade do relatório.
+```ruby
+bundle install
+```
+- Execute o comando "bundle install" na pasta ProcessoRD.
+
+# Executando os testes:
+
+- Na pasta /ProcessoRD/cucumber, execute o comando abaixo para execução de todos os testes:
+
+```ruby
+cucumber
+```
+
+- Para exeutar uma feature específica, execute o comando na pasta cucumber:
+
+```ruby
+cucumber -t @nome_da_feature
+```
+obs.: a tag da feature "@nome_da_feature" vem no inicio de cada arquivo.
+
+# Relatório dos testes em HTML:
+- Após a execução dos testes estará disponível um relatório na pasta /ProcessoRD/cucumber/features_report.html
+obs.: Os screenshots estarão disponíveis no pé de cada funcionalidade do relatório.
