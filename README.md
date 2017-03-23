@@ -1,30 +1,30 @@
-# Teste de Seleção - Quality Assurance Engineer - Tiago Oliveira Silva
-Os testes foram feitos com Cucumber e Capybara com o conceito de Page Objects.
+# Quality Assurance Engineer - Tiago Oliveira Silva
+  Testes funcionais sobre a plataforma RD Station. Os testes foram feitos com Cucumber e Capybara com o conceito de Page Objects.
 
-# Projeto Estruturado da Seguinte Maneira:
+### Projeto está estruturado da seguinte forma: ###
 
-  ProcessoRD
-    cucumber
-      features
-        attach
-        hooks
-        page_objects
-        specifications
-        step_definitions
-        support
-          config
+-  ProcessoRD
+-    cucumber
+-      features
+-        hooks
+-        page_objects
+-        specifications
+-        step_definitions
+-        support
+-          config
+-      screenshots
 
 ### Driver necessário: ###
     - Por padrão os testes serão executados no Chrome
-    - Instale o Nodejs (Next, Next e Finish) https://nodejs.org/en/
+    - Instale o Nodejs (Next, Next e Finish) https://nodejs.org/en/ e depois o comando abaixo:
       ```ruby
       npm install -g chromedriver
       ```
 
 ### Configurando o ambiente ###
 
-    - Necessário ruby 2.3.3p222
-    - Instalando o bundler
+    - Necessário ruby 2.3.3p222.
+    - Instalando o bundler.
       Navegar para pasta desejada e executar o seguinte comando:
       ```ruby
       gem install bundler
@@ -34,8 +34,7 @@ Os testes foram feitos com Cucumber e Capybara com o conceito de Page Objects.
       ```ruby
       bundle install
       ```
-    - Execute o comando "bundle install" na pasta ProcessoRD
-
+    - Execute o comando "bundle install" na pasta ProcessoRD.
 
 ### Executando os testes ###
 
@@ -47,4 +46,8 @@ Os testes foram feitos com Cucumber e Capybara com o conceito de Page Objects.
       ```ruby
       cucumber -t @nome_da_feature
       ```
-      obs.: o @nome_da_feature vem no inicio de cada arquivo
+      obs.: a tag da feature "@nome_da_feature" vem no inicio de cada arquivo.
+
+### Reporte dos testes em HTML ###
+    - Após a execução estará disponível na pasta /ProcessoRD/cucumber/features_report.html
+    obs.: Os screenshots estarão disponíveis no pé de cada feature do report.

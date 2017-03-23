@@ -1,2 +1,2 @@
-##Configuração da execução dos testes
+## Configuração da execução dos testes
 default: -p html_report -p chrome -p qa
