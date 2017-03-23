@@ -1,31 +1,32 @@
 # Quality Assurance Engineer - Tiago Oliveira Silva
   Testes funcionais sobre a plataforma RD Station. Os testes foram feitos com Cucumber e Capybara com o conceito de Page Objects.
 
-### Projeto está estruturado da seguinte forma: ###
+### O projeto está estruturado da seguinte forma: ###
 
 -  ProcessoRD
--    cucumber
--      features
--        hooks
--        page_objects
--        specifications
--        step_definitions
--        support
--          config
--      screenshots
+-  cucumber
+-  features
+-  hooks
+-  page_objects
+-  specifications
+-  step_definitions
+-  support
+-  config
+-  screenshots
 
 ### Driver necessário: ###
-    Por padrão os testes serão executados no Chrome
+    - Por padrão os testes serão executados no Chrome
     Instale o Nodejs (Next, Next e Finish) https://nodejs.org/en/ e depois o comando abaixo:
+
       ```ruby
       npm install -g chromedriver
       ```
 
 ### Configurando o ambiente ###
 
-    Necessário ruby 2.3.3p222.
-    Instalando o bundler.
-      Navegar para pasta desejada e executar o seguinte comando:
+    - Necessário ruby 2.3.3p222.
+    - Instalando o bundler. Navegue na pasta /ProcessoRD/ e execute o seguinte comando:
+
       ```ruby
       gem install bundler
       ```
