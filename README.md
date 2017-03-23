@@ -1,6 +1,8 @@
 # Quality Assurance Engineer - Tiago Oliveira Silva
   Testes funcionais sobre a plataforma RD Station. Os testes foram feitos com Cucumber e Capybara com o conceito de Page Objects.
 
+  [![CircleCI](https://circleci.com/gh/tiagonline/ProcessoRD.svg?style=svg)](https://circleci.com/gh/tiagonline/ProcessoRD)
+
 # O projeto está estruturado da seguinte forma:
 
 -  ProcessoRD
