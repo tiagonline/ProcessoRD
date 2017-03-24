@@ -1,13 +1,13 @@
 #language: pt
 
-@hooks_cadastrolead
-@cadastrolead
+@hooks_criarlead
+@cadastroleads
 
-Funcionalidade: Cadastrar Lead
+Funcionalidade: Cadastrar Leads
 
-Cenario: Como usuário, eu quero adicionar lead
+Cenario: Como usuário, eu quero adicionar leads
 
-    Dado eu clique no menu Relacionar
+    Dado que eu clique no menu Relacionar
     Quando eu escolho a opção Base de lead_company_setor
     E clico em inserir Leads manualmente
     E preencho todos os campos

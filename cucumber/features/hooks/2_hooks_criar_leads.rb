@@ -1,4 +1,4 @@
-Before '@hooks_cadastrolead' do
+Before '@hooks_criarlead' do
 
   @Lead = PaginaLead.new
   @nome_evento = Faker::Name.name
@@ -22,6 +22,5 @@ Before '@hooks_cadastrolead' do
   @lead_empresa_facebook = Faker::Internet.user_name
   @lead_empresa_telefone = Faker::Base.numerify('31########').to_s
   @lead_empresa_endereco = Faker::Address.street_name
-  @lead_dono_lead =
   @lead_anotacao = Faker::Lorem.paragraph
 end

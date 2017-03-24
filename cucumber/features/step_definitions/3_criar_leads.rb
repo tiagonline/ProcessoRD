@@ -36,8 +36,10 @@ Quando(/^preencho todos os campos$/) do
   @Lead.lead_empresa_endereco.set(@lead_empresa_endereco)
   @Lead.lead_dono_lead.select(@email)
   @Lead.lead_anotacao.set(@lead_anotacao)
+  click_link 'Salvar'
 end
 
 Então(/^o Lead está cadastrado com sucesso$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  validalead = page.find(:id, "#lead-name").text
+  expect(validalead).to eq @lead_name
 end

@@ -6,10 +6,9 @@ Quando(/^eu informar os campos obrigatórios$/) do
   @Cliente.email.set(@email)
   @Cliente.senha.set(@senha)
   @Cliente.confirma_senha.set(@senha)
-  puts "Email: " + @email + "  Senha: " + @senha
+  puts "Criado o usuario de email: " + @email + " e Senha: " + @senha
   @Cliente.empresa.set(@empresa)
   @Cliente.site.set(@site)
-  # @Cliente.pais.select(@pais)
   @Cliente.estado.select(@estado)
   @Cliente.cidade.select(@cidade)
   fill_in 'CEP', :with => @cep
@@ -46,3 +45,8 @@ Entao(/^o meu Login é efetuado com sucesso$/) do
   click_link 'Explore o RD Station'
     sleep 1
 end
+
+# Entao(/^por fim eu efetuo logoff$/) do
+#   page.all(:css, '.caret')[4].click
+#   click_link 'Sair'
+# end
