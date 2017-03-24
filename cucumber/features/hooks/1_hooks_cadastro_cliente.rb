@@ -2,7 +2,7 @@ Before '@hooks_cadastrocliente' do
 
   @Cliente = PaginaCadastro.new
   @email = Faker::Internet.email
-  @senha = Faker::Base.numerify('@teste####').to_s
+  @senha = Faker::Internet.password(8)
   @empresa = Faker::Company.name
   @site = Faker::Internet.url('exemplo.com.br', '/')
   @pais = "Brasil"
@@ -14,5 +14,4 @@ Before '@hooks_cadastrocliente' do
   @nome_cliente = Faker::Name.name_with_middle
   @cpf =  Faker::CPF.numeric
   @cargo = Faker::Company.profession
-
 end

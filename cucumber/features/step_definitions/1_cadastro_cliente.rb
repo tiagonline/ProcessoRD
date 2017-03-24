@@ -44,4 +44,5 @@ Entao(/^o meu Login é efetuado com sucesso$/) do
   click_link 'Pular por agora'
     sleep 1
   click_link 'Explore o RD Station'
+    sleep 1
 end

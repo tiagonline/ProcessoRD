@@ -14,5 +14,4 @@ class PaginaCadastro < SitePrism::Page
   element :nome_cliente, "#user_account_subscription_attributes_contractor_attributes_name"
   element :cpf, "#info_identifier_cpf"
   element :cargo, "#info_job_title"
-
 end
