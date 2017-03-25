@@ -1,4 +1,4 @@
-Before '@hooks_criarlead' do
+Before '@hooks_leads' do
 
   @Lead = PaginaLead.new
   @nome_evento = Faker::Name.name

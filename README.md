@@ -50,13 +50,6 @@ Na pasta \ProcessoRD\cucumber, execute o comando abaixo para execução de todos
 cucumber
 ```
 
-Para exeutar uma feature específica, execute o comando na pasta cucumber:
-
-```ruby
-cucumber -t @nome_da_feature
-```
-obs.: a tag da feature "@nome_da_feature" vem no inicio de cada arquivo.
-
 # Relatório dos testes em HTML:
 Após a execução dos testes estará disponível um relatório na pasta \ProcessoRD\cucumber\features_report.html
 obs.: Os screenshots estarão disponíveis no pé de cada funcionalidade do relatório.

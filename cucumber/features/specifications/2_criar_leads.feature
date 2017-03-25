@@ -1,7 +1,8 @@
 #language: pt
 
-@hooks_criarlead
-@cadastroleads
+@hooks_leads
+@hooks_cliente
+@criarleads
 
 Funcionalidade: Cadastrar Leads
 

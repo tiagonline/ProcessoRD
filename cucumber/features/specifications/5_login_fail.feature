@@ -1,6 +1,6 @@
 #language: pt
 
-@hooks_criarcliente
+@hooks_cliente
 @loginfail
 
 Funcionalidade: Login no RD Station
@@ -12,6 +12,6 @@ Para que eu possa ter acesso ao sistema como cliente
 Cenario: Login sem sucesso
 
     Dado que eu estou na página de Login do RD Station
-    Quando eu informar os campos obrigatórios para login
+    Quando eu informar os campos obrigatórios com dados inexistentes para login
     E clicar em Entrar
     Entao o meu Login é efetuado sem êxito

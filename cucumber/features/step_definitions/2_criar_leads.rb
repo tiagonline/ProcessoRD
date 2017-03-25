@@ -1,4 +1,4 @@
-Dado(/^eu clique no menu Relacionar$/) do
+Dado(/^que eu clique no menu Relacionar$/) do
   page.all(:css, '.dropdown-toggle')[2].click
 end
 
@@ -22,9 +22,9 @@ Quando(/^preencho todos os campos$/) do
   @Lead.lead_linkedin.set(@lead_linkedin)
   @Lead.lead_site.set(@lead_site)
   @Lead.lead_estado.select(@lead_estado)
-  fill_in "#select2-drop-mask", :with => "Belo Horizonte"
-  element.send_keys [:enter]
-  #@Lead.lead_cidade.select(@lead_cidade)
+  # page.find(:id, "select2-drop-mask").click
+  # fill_in "#select2-drop-mask", :with => "Belo Horizonte"
+  # element.send_keys [:enter]
   @Lead.lead_empresa.set(@lead_empresa)
   @Lead.lead_setor.select(@lead_setor)
   @Lead.lead_tamanho.select(@lead_tamanho)
@@ -34,12 +34,10 @@ Quando(/^preencho todos os campos$/) do
   @Lead.lead_empresa_facebook.set(@lead_empresa_facebook)
   @Lead.lead_empresa_telefone.set(@lead_empresa_telefone)
   @Lead.lead_empresa_endereco.set(@lead_empresa_endereco)
-  @Lead.lead_dono_lead.select(@email)
   @Lead.lead_anotacao.set(@lead_anotacao)
-  click_link 'Salvar'
+  click_button 'Salvar'
 end
 
 Então(/^o Lead está cadastrado com sucesso$/) do
-  validalead = page.find(:id, "#lead-name").text
-  expect(validalead).to eq @lead_name
+  expect(page).to have_content("Marcar oportunidade")
 end

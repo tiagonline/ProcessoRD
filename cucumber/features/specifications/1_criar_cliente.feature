@@ -1,6 +1,6 @@
 #language: pt
 
-@hooks_criarcliente
+@hooks_cliente
 @criarcliente
 
 Funcionalidade: Cadastrar cliente
@@ -13,4 +13,3 @@ Cenario: Cadastro cliente com sucesso e fazer logoff
     Quando eu informar os campos obrigatórios
     E clico em Criar minha conta
     Entao o meu Login é efetuado com sucesso
-    # E por fim eu efetuo logoff

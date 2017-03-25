@@ -45,8 +45,3 @@ Entao(/^o meu Login é efetuado com sucesso$/) do
   click_link 'Explore o RD Station'
     sleep 1
 end
-
-# Entao(/^por fim eu efetuo logoff$/) do
-#   page.all(:css, '.caret')[4].click
-#   click_link 'Sair'
-# end

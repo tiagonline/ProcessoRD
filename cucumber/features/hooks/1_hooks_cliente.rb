@@ -1,4 +1,4 @@
-Before '@hooks_criarcliente' do
+Before '@hooks_cliente' do
 
   @Cliente = PaginaCadastro.new
   @email = Faker::Internet.email
