@@ -25,4 +25,13 @@ dependencies:
 test:
  override:
    - cd cucumber; cucumber
-   - bundle exec cucumber --format pretty --format json --out $CIRCLE_TEST_REPORTS/cucumber/tests.cucumber
+   - mkdir -p $CIRCLE_TEST_REPORTS/cucumber:
+        parallel: true
+
+    # Step for cucumber
+    - bundle exec rake "knapsack_pro:cucumber[--format pretty --format json --out $CIRCLE_TEST_REPORTS/cucumber/tests.cucumber]":
+        parallel: true
+
+    # Step for rspec
+    - bundle exec rake "knapsack_pro:queue:rspec[--format progress --format RspecJunitFormatter -o $CIRCLE_TEST_REPORTS/rspec/junit.xml]":
+        parallel: true
