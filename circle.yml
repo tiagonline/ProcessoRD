@@ -35,3 +35,6 @@ test:
     # Step for rspec
     - bundle exec rake "knapsack_pro:queue:rspec[--format progress --format RspecJunitFormatter -o $CIRCLE_TEST_REPORTS/rspec/junit.xml]":
         parallel: true
+
+    - store_test_results:
+        path: test-reports/
